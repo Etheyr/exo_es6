@@ -24,10 +24,10 @@
 					let Name = majName + btn.slice(1);
 
 					if (btn === '') {
-						let nasusSansStack = document.getElementById('DisplayTxt').innerHTML = 'Nasus est à la fête de noël';
+						let nasusSansStack = document.getElementById('DisplayTxt').innerHTML = 'Bonjour père Noël';
 					} else {
 						let listNasus = document.body.appendChild(document.createElement('li')).innerHTML = Name ;
-						let spawnTxt = document.getElementById('DisplayTxt').innerHTML = `${btn} est soyeux et raffiné`; 
+						let spawnTxt = document.getElementById('DisplayTxt').innerHTML = `Bonjour ${btn}`; 
 						this.tabName.push(btn);
 						console.log(this.tabName);
 					}

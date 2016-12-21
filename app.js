@@ -11,9 +11,7 @@
 
 			this.DisplayTXT();
 			this.SearchFilter();
-
 		},
-		
 		DisplayTXT: function DisplayTXT() {
 			var _this = this;
 
@@ -26,16 +24,15 @@
 				var Name = majName + btn.slice(1);
 
 				if (btn === '') {
-					var nasusSansStack = document.getElementById('DisplayTxt').innerHTML = 'Nasus est à la fête de noël';
+					var nasusSansStack = document.getElementById('DisplayTxt').innerHTML = 'Bonjour père Noël';
 				} else {
 					var listNasus = document.body.appendChild(document.createElement('li')).innerHTML = Name;
-					var spawnTxt = document.getElementById('DisplayTxt').innerHTML = btn + ' est soyeux et raffin\xE9';
+					var spawnTxt = document.getElementById('DisplayTxt').innerHTML = 'Bonjour ' + btn;
 					_this.tabName.push(btn);
 					console.log(_this.tabName);
 				}
 			});
 		},
-
 		SearchFilter: function SearchFilter() {
 			var _this2 = this;
 
